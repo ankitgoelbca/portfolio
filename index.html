@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankit Goel - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙/☀️</button>
+  <script>
+  function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('show');
+  }
+  </script>
+  <script>
+  function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
+
+<style>
+  .theme-toggle {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s;
+  }
+  .theme-toggle:hover {
+    background: var(--primary-dark);
+  }
+</style>
+
+
+  <header>
+  <div class="logo">Ankit Goel</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav>
+    <ul id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <section class="hero">
+    <h2 style="color: #c4d2e0;">Hi, I'm Ankit Goel 👋</h2>
+    <p><b>Web Developer | UI/UX Designer | BCA Graduate</b></p>
+  </section>
+  
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="WhatsApp Image 2025-07-23 at 12.05.15 PM.jpeg" alt="Ankit Goel">
+      <div>
+        <p><h3>I intended to be a part of an organization where i can constantly learn and endeavour my technical and management skills and make best use of my knowledge and skills for the organization. I look forward to establishing myself by adapting new technologies as well.</p></h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>💻 Technical Skills</h2>
+    <ul class="skills-list">
+      <li>C</li><li>C++</li><li>Java</li><li>Python</li><li>JavaScript</li>
+      <li>HTML</li><li>CSS</li><li>Tailwind CSS</li><li>ReactJS</li>
+      <li>MongoDB</li><li>SQL</li><li>Git & GitHub</li><li>VS Code</li>
+      <li>WordPress</li><li>Linux</li><li>OOPs</li><li>DBMS</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>🚀 Projects</h2>
+    <div class="project">
+      <h3>Car Wash Management System</h3>
+      <ul>
+        <li>A responsive system to automate car wash businesses using HTML, CSS, JavaScript.</li>
+        <li>The Car Wash Management System is a comprehensive software solution designed to streamline and automate various operations involved in the management of a car wash business.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Car Rental Website</h3>
+      <ul>
+        <li>Rental system for listing and booking cars, designed for modern car businesses.</li>
+        <li>It is a system design especially for large, premium and small car rental business. The car rental systemprovides complete functionality of listing and booking car.</li>
+      </ul>
+    </div>
+    <div class="project">
+      <h3>Calculator</h3>
+      
+      <ul>
+        <a href="https://calculatormadebyankit.netlify.app/" target="_blank" style="padding: 10px 20px; background-color: #4CAF50; color: white; border-radius: 8px; text-decoration: none;">Use Calculator</a>
+      </ul>
+    </div>
+  </section>
+  
+
+<section id="experience" class="resume-section">
+  <h2>💼 Work Experience</h2>
+  <ul style="list-style: none; padding: 0;">
+    <li style="margin-bottom: 1.5rem; text-align: left;">
+      <h2> FreeLancing </h2> 
+      <strong>Lenskart – Infographics Designing </strong><br>
+      <em>May 2022 – September 2022</em>
+      <ul>
+        <li>Conceptualizing visuals based in requirements.</li>
+        <li> Creating images and layouts by hand or using design software such as photoshop.</li>
+        <li>Used the appropriate colors and layouts for each graphic.</li>
+      </ul>
+    </li>
+    <li style="text-align: left;">
+      <strong>Fab India – Catalogue Management</strong><br>
+      <em>March 2023 – August 2023</em>
+      <ul>
+        <li>Worked on every marketplace i.e. Myntra, Flipkart, Amazon, FirstCry, Nykaa, and Ajio to make their products live.</li>
+        <li>Maintain large online product catalogs.</li>
+        <li>Took care of the content from template downloading from every marketplace to upload directly.</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+
+  <section id="certifications">
+    <h2>📜 Certifications</h2>
+    <div class="skills-list">
+      <a href="https://drive.google.com/file/d/15FQkOefO-6KEJCyzArJk_PqjGJrYZCc7/view" class="btn" target="_blank">Network Implementation – Network Bulls</a>
+      <a href="https://drive.google.com/file/d/1jPoCj7sNGNP8jW6RkrXshFFLqCkFeSv8/view" class="btn" target="_blank">OOPs in C++ – Great Learning</a>
+      <a href="https://drive.google.com/file/d/1mMf20G22bGLMzPnmOa_Vz5syx37gGlMM/view" class="btn" target="_blank">HTML/CSS – OpenWeaver</a>
+      <a href="https://drive.google.com/file/d/1mMf20G22bGLMzPnmOa_Vz5syx37gGlMM/view" class="btn" target="_blank">Technology – Deloitte</a>
+      <a href="https://www.hackerrank.com/certificates/6da38a41f137" class="btn" target="_blank">SQL Intermediate – HackerRank</a>
+      <a href="https://www.hackerrank.com/certificates/d4837dab2372" class="btn" target="_blank">Java Basic – HackerRank</a>
+    </div>
+  </section>
+  <section id="resume" class="resume-section">
+  <h2>📄 My Resume</h2>
+  <p>You can view or download my resume by clicking the button below:</p>
+  <a href="ANKIT GOEL(RESUME).pdf" download class="btn">📥 Download Resume</a>
+</section>
+
+<style>
+  .resume-section {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: background 0.3s;
+  }
+
+  body.dark-mode .resume-section {
+    background: rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+  
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <p>Email: <a href="mailto:bcaankit.goel@gmail.com">bcaankit.goel@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919810125792">+91-9810125792</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ankit-goel-362360267" target="_blank">Ankit Goel</a></p>
+  </section>
+
+  <footer>
+    &copy; 2023 Ankit Goel | All Rights Reserved.
+  </footer>
+
+  <script>
+  function toggleMenu() {
+    const nav = document.querySelector("nav ul");
+    nav.classList.toggle("show");
+
+    // Close menu on link click
+    document.querySelectorAll("nav ul li a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("show");
+      });
+    });
+  }
+</script>
+
+
+</body>
+</html>

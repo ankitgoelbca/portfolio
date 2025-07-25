@@ -1,0 +1,303 @@
+/* === Base Styles === */
+:root {
+  --primary: #007bfe;
+  --primary-dark: #005fd1;
+  --light-bg: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+  --dark-bg: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  --light-text: #001f3f;
+  --dark-text: #e0e0e0;
+  --card-bg: #ffffff;
+  --card-dark-bg: #1f1f2f;
+}
+
+body {
+  background: var(--light-bg);
+  font-family: 'Segoe UI', sans-serif;
+  color: #444;
+  margin: 0;
+  padding: 0;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/* === Typography === */
+h1, h2, h3 {
+  color: var(--light-text);
+  transition: color 0.3s ease;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: var(--dark-text);
+}
+
+/* === Section Layout === */
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* === Buttons === */
+button, .btn {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* === Header === */
+header {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* === Navigation === */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* === Hero Section === */
+.hero {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+/* === About Section === */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.about-content img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* === Skills === */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.skills-list li {
+  background: #e0e7ff;
+  color: var(--light-text);
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+body.dark-mode .skills-list li {
+  background: #2e3b55;
+  color: #fff;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+}
+
+/* === Project Cards === */
+.project {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+body.dark-mode .project {
+  background: var(--card-dark-bg);
+  color: var(--dark-text);
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+/* === Footer === */
+footer {
+  background-color: #1f1f1f;
+  color: #fdf8f8;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+
+/* === Theme Toggle Button === */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+.theme-toggle:hover {
+  background: var(--primary-dark);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero {
+  background: url('background-coder5.jpeg') no-repeat center center;
+  background-size: cover;
+  color: rgb(231, 231, 237);
+  text-align: center;
+  padding: 4rem 3rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Base styles */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  z-index: 1001;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+/* Desktop nav */
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 200px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+  }
+
+  nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+}
+
+
